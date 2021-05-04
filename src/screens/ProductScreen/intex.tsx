@@ -14,7 +14,7 @@ const ProductScreen = () => {
 
     
     return (
-        <View>
+        <View style={styles.root}>
             <Text style={styles.title}>{product.title}</Text>
 
             {/* image carrousel */}
