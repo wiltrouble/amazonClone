@@ -5,6 +5,7 @@ import {Picker} from '@react-native-picker/picker';
 import styles from "./styles";
 import product from "../../data/product";
 import QuantitySelector from '../../components/QuantitySelector';
+import Button from '../../components/Button';
 
 const ProductScreen = () => {
 
@@ -43,6 +44,8 @@ const ProductScreen = () => {
                 <Text> {product.amount} Available</Text>
             </View>
             {/* buttons */}
+            <Button text={"Add to Cart"} onPress={() => console.log("pressed")}></Button>
+            <Button text={"Buy Now"} onPress={() => console.log("pressed")}></Button>
         </View>
     )
 }
