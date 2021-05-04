@@ -28,8 +28,10 @@ const ProductItem = ({ item }: ProductItemProps) => {
                 {
                     [0,0,0,0,0].map((e, i) =>
                         <FontAwesome 
+                        key={`${item.id}- ${i}`}
                         style={styles.star} 
-                        name={i < Math.floor(item.avgRating) ? 'star' : 'star-o'} size={18} 
+                        name={i < Math.floor(item.avgRating) ? 'star' : 'star-o'} 
+                        size={18} 
                         color={'#e47911'}/>    
                     )
                 }
