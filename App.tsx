@@ -20,6 +20,7 @@
    Colors,
  } from 'react-native/Libraries/NewAppScreen';
 import HomeScreen from './src/screens/HomeScreen';
+import ProductScreen from './src/screens/ProductScreen/intex';
 
  const App = () => {
    const isDarkMode = useColorScheme() === 'dark';
@@ -31,7 +32,8 @@ import HomeScreen from './src/screens/HomeScreen';
    return (
      <SafeAreaView style={backgroundStyle}>
        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-       <HomeScreen/>
+       {/* </SafeAreaView><HomeScreen/> */}
+       <ProductScreen />
      </SafeAreaView>
    );
  };

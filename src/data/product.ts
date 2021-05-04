@@ -20,4 +20,5 @@ export default {
   ratings: 2989,
   price: 99.98,
   oldPrice: 120.06,
+  amount: 5
 };
